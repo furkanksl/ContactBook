@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="kurulusAnchor" minHeight="300.0" minWidth="300.0" prefHeight="624.0" prefWidth="1016.0" style="-fx-background-color: #c0ca33;" stylesheets="@../Main/Css.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rehber.controller.EditController">
+   <children>
+      <Button fx:id="Kayitet" layoutX="402.0" layoutY="573.0" mnemonicParsing="false" onAction="#addCompany" prefHeight="44.0" prefWidth="96.0" style="-fx-background-color: blue;" stylesheets="@../stylesheet/Css.css" text="Kaydet" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnIptal" layoutX="547.0" layoutY="571.0" mnemonicParsing="false" onAction="#close" prefHeight="44.0" prefWidth="90.0" style="-fx-background-color: red;" text="iptal" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Label layoutX="30.0" layoutY="23.0" prefHeight="55.0" prefWidth="510.0" text="Aşagdaki bilgiler Doldurunuz :" textFill="#221d1d">
+         <font>
+            <Font name="Papyrus" size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="109.0" prefHeight="61.0" prefWidth="168.0" text="Kuruluş Adı :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tFInsaTarihi" layoutX="243.0" layoutY="191.0" prefHeight="31.0" prefWidth="232.0" promptText="örneğin :  1997">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <Label layoutX="30.0" layoutY="334.0" prefHeight="61.0" prefWidth="168.0" text="Kuruluş Tel No :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="176.0" prefHeight="61.0" prefWidth="155.0" text="Kuruluş Tarihi :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tFKurulusunIsmi" layoutX="246.0" layoutY="124.0" prefHeight="31.0" prefWidth="232.0" promptText="örneğin : Microsoft">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <Button fx:id="krulusFotografEkle" layoutX="572.0" layoutY="112.0" mnemonicParsing="false" onAction="#onClik_image_save" prefHeight="48.0" prefWidth="218.0" style="-fx-background-color: #ff9800;" text="Fotoğraf Ekle">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Button>
+      <RadioButton layoutX="-142.0" layoutY="101.0" mnemonicParsing="false" text="RadioButton" />
+      <Label layoutX="30.0" layoutY="258.0" prefHeight="61.0" prefWidth="194.0" text="Kuruluş Sektörü :">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tFKurulusSektoru" layoutX="242.0" layoutY="273.0" prefHeight="31.0" prefWidth="232.0" promptText="örneğin :  bilgisayar ">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <TextField fx:id="tFTelNoKurulus" layoutX="242.0" layoutY="349.0" prefHeight="31.0" prefWidth="232.0" promptText="örneğin :  04442536">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <Label layoutX="30.0" layoutY="417.0" prefHeight="61.0" prefWidth="208.0" text="Kuruluş Adresi :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="tFKurulusunAdresi" layoutX="242.0" layoutY="425.0" prefHeight="139.0" prefWidth="232.0" promptText="örneğin :  bilgisayar " />
+      <ImageView fx:id="myImageView" fitHeight="150.0" fitWidth="218.0" layoutX="572.0" layoutY="183.0" pickOnBounds="true" preserveRatio="true" />
+      <JFXListView fx:id="lvEditCompany" layoutX="802.0" layoutY="112.0" onMouseClicked="#setTextCompany" />
+   </children>
+</AnchorPane>

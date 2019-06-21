@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <help_text>// Uncomment the following line to change the fontsize and font:
+fontsize=10
+// fontfamily=SansSerif //possible: SansSerif,Serif,Monospaced
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// Welcome to UMLet!
+//
+// Double-click on elements to add them to the diagram, or to copy them
+// Edit elements by modifying the text in this panel
+// Hold Ctrl to select multiple elements
+// Use Ctrl+mouse to select via lasso
+//
+// Use +/- or Ctrl+mouse wheel to zoom
+// Drag a whole relation at its central square icon
+//
+// Press Ctrl+C to copy the whole diagram to the system clipboard (then just paste it to, eg, Word)
+// Edit the files in the "palettes" directory to create your own element palettes
+//
+// Select "Custom Elements &gt; New..." to create new element types
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+
+// This text will be stored with each diagram;  use it for notes.</help_text>
+  <zoom_level>7</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>280</x>
+      <y>329</y>
+      <w>420</w>
+      <h>224</h>
+    </coordinates>
+    <panel_attributes>EklenecekVarlik
+--
+
+- eklenecek_TamIsim :String
+- imageName:String
+- nesnenin_Turu:String
+- telNo:String
+- adresBilgisi: String
+- yas: String
+
+--
+
++ EklenecekVarlik(String eklenecek_TamIsim, String nesnenin_Turu, String telNo, String adresBilgisi, String yas,String imageName)
++ getTelNo():String
++ setTelNo(String telNo):void  
++ getEklenecek_TamIsim():String 
++ setEklenecek_TamIsim(String eklenecek_TamIsim):void  
++ setAdresBilgisi(String adresBilgisi):void  
++ getYas():String  
++ void setYas(String yas) 
++ getAdresBilgisi():String  
++ getNesnenin_Turu():String  
++ setNesnenin_Turu(String nesnenin_Turu):void    
++ toString():String 
++ getImageName():String  
++ setImageName(String imageName):void </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>525</x>
+      <y>679</y>
+      <w>420</w>
+      <h>217</h>
+    </coordinates>
+    <panel_attributes>Kurulus
+--
+
+- kurulus_Sektoru:String
+
+--
+
++ Kurulus(String eklenecek_TamIsim, String yas, String kurulus_Sektoru, String adresBilgisi, String telNo,String imageName) 
++ getKurulus_Sektoru():String 
++ setKurulus_Sektoru(String kurulus_Sektoru):void  
++ toString():String  
++ toStringKurulus():String  </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>679</y>
+      <w>448</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>
+Hayvan
+--
+
+- hayvan_EvcilDurumu:String
+
+
+--
++ Hayvan( String eklenecek_TamIsim,String yas,String hayvan_EvcilDurumu, String adresBilgisi,String telNo ,String imageName):Hayvan 
+
++ getHayvan_EvcilDurumu():String
++ setHayvan_EvcilDurumu(String hayvan_EvcilDurumu):void 
++ toStringHayvan():String </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>301</x>
+      <y>973</y>
+      <w>469</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>Insan
+--
+
+- uyruk:String
+- insan_Meslegi:String
+- e_mail:String
+- ev_Adresi:String
+
+--
+ 
++ Insan Insan(String eklenecek_TamIsim, String yas, String uyruk, String insan_Meslegi, String e_mail, String adresBilgisi, String telNo, String foto)
++ getUyruk():String 
++ setUyruk(String uyruk):void
++ getInsan_Meslegi():String  
++ setInsan_Meslegi(String insan_Meslegi) :void 
++ getE_mail():String  
++ setE_mail(String e_mail):void 
++ toString():String  
++ toStringInsan():String </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>462</x>
+      <y>546</y>
+      <w>21</w>
+      <h>441</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;610.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>588</x>
+      <y>546</y>
+      <w>112</w>
+      <h>147</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;140.0;190.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2093</x>
+      <y>336</y>
+      <w>294</w>
+      <h>203</h>
+    </coordinates>
+    <panel_attributes>Bitki
+--
+
+-  agacin_Adi;,:String
+-  yas:String
+-  boyu:String
+-  nesneTuru:String
+-  bitkiAdresi:String
+-  imageName:String
+--
+
++ Bitki():Bitki
++ Bitki(String agacin_Adi, String yas, String boyu, String nesneTuru, String bitkiAdresi,String imageName):Bitki
++ getAgacin_Adi():String
++ setAgacin_Adi(String agacin_Adi):void
++ getYas():String
++ setYas(String yas) :void
++ getBoyu():String
++ setBoyu(String boyu):void
++ getNesneTuru():String
++ setNesneTuru(String nesneTuru):void
++ getBitkiAdresi():String
++ setBitkiAdresi(String bitkiAdresi):void 
++ getImageName():String
++ setImageName(String imageName):void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1946</x>
+      <y>686</y>
+      <w>252</w>
+      <h>161</h>
+    </coordinates>
+    <panel_attributes>Cicek
+--
+
+- turu :String
+- renk :String
+
+--
++ Cicek()
++ Cicek(String turu, String renk)
++ Cicek( isim:String, yas: int, boyu: double, renk:String )
++ getTuru(): String 
++ setTuru(String turu):void  
++ getRenk():String 
++ setRenk(String renk):void 
++ toString():String 
++ toStringCicek():String 
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2282</x>
+      <y>686</y>
+      <w>427</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>Agac
+--
+
+- agacin_Durumu:String
+- verimli:String
+
+--
+
++ Agac(String agacin_Durumu, String verimli):Agac
++ Agac(String agacin_Durumu, String verimli, String agacin_Adi, String yas, String boyu, String nesneTuru, String bitkiAdresi,String imageName):Agac
++ getAgacin_Durumu():String
++ setAgacin_Durumu(String agacin_Durumu):void
++ getVerimli():String
++ setVerimli(String verimli):void
++ toStringAgac():String
++ toString():String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1246</x>
+      <y>357</y>
+      <w>329</w>
+      <h>182</h>
+    </coordinates>
+    <panel_attributes>NobetYerleri
+--
+-  nesnenin_Turu:String
+-  isim:String
+-  adres_Bilgileri:String
+-  tel_NO:String
+-  imageName:String 
+
+--
+
++ NobetYerleriNobetYerleri(String nesnenin_Turu, String isim, String adres_Bilgileri, String tel_NO, String imageName):NobetYerleri
++ getNesnenin_Turu():String 
++ setNesnenin_Turu(String nesnenin_Turu):void  
++ getIsim():String  
++ setIsim(String isim):void  
++ getAdres_Bilgileri():String  
++ setAdres_Bilgileri(String adres_Bilgileri):void  
++ getTel_NO():String  
++ setTel_NO(String tel_NO):void 
++ getImageName():String 
++ setImageName(String imageName):void  
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1540</x>
+      <y>700</y>
+      <w>224</w>
+      <h>175</h>
+    </coordinates>
+    <panel_attributes>NobetciEczaneler
+--
+
+- eczane_NobetGunu:String
+
+--
++ NobetciEczaneler(String eczane_NobetGunu) :NobetciEczaneler
++ NobetciEczanelerNobetciEczaneler(String isim, String eczane_NobetGunu, String nesnenin_Turu, String adres_Bilgileri, String tel_NO, String imageName):NobetciEczaneler
++ getEczane_NobetGunu():String 
++ setEczane_NobetGunu(String eczane_NobetGunu):void 
++ toString():String  
++ toStringEczane():String  </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1078</x>
+      <y>679</y>
+      <w>392</w>
+      <h>217</h>
+    </coordinates>
+    <panel_attributes>TaxiDuragi
+--
+- aktif_Taksi_Sayisi:String
+
+--
++ TaxiDuragi(String aktif_Taksi_Sayisi):TaxiDuragi
++ TaxiDuragi(String isim, String aktif_Taksi_Sayisi, String nesnenin_Turu, String adres_Bilgileri, String tel_NO, String imageName):TaxiDuragi
++ getAktif_Taksi_Sayisi():String
++ setAktif_Taksi_Sayisi(String  aktif_Taksi_Sayisi) :void
++ toString():String
++ toStringTaxi():String </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>3808</x>
+      <y>217</y>
+      <w>266</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>interfaccontroller
+
+--
+
++ close():void 
++ isNumber(String tmp): boolean  </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>3794</x>
+      <y>343</y>
+      <w>112</w>
+      <h>658</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>140.0;10.0;10.0;920.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>217</x>
+      <y>546</y>
+      <w>119</w>
+      <h>147</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>150.0;10.0;10.0;190.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1274</x>
+      <y>532</y>
+      <w>21</w>
+      <h>161</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;210.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1470</x>
+      <y>532</y>
+      <w>189</w>
+      <h>182</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;250.0;240.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2072</x>
+      <y>532</y>
+      <w>140</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>180.0;10.0;10.0;220.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>2296</x>
+      <y>532</y>
+      <w>203</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;270.0;220.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>4032</x>
+      <y>994</y>
+      <w>511</w>
+      <h>623</h>
+    </coordinates>
+    <panel_attributes>NewController
+
+--
+
+- textFieldAktifTaksiSayisi:  TextField
+- textFieldDurakAdi: TextField 
+- tFABTaksiDuragi: TextArea 
+- tFTelNoTaksiDuragi:  TextField      
+- textFieldEczaneninAdi:TextField 
+- btnFotografEkleEczane:Button 
+- tfEczaneTel:TextField 
+- tfEcaneNobetGunu:TextField 
+- tfEczaneAdres:TextField 
+- agacanchor:AnchorPane 
+- textfieldAgacinBoyu:TextField 
+- textfieldAgacAdi:TextField 
+- textfieldAgacinYas:TextField 
+- textfieldAgacinSaglikDurumu:TextField   
+- tFagacinAdresi:TextArea  
+- Cicekanchor:AnchorPane 
+- textFieldCicekYasi:TextField 
+- textFieldCicekRenki:TextField  
+- textFieldCicekIsmi:TextField 
+- textFieldCicekBoyu:TextField  
+- tfCiceckTuru:TextField 
+- tFCiceginAdresi:TextField    
+- Hayvananchor:AnchorPane 
+- tfHayvanTel:TextField 
+- textFieldHayvanYas:TextField  
+- textFieldHayvanIsim:TextField 
+- tfHayvanAdresBilgisi:TextField   
+- kurulusAnchor:AnchorPane 
+- tFInsaTarihi:TextField   
+- tFKurulusunIsmi:TextField 
+- krulusFotografEkle:Button 
+- tFKurulusSektoru:TextField 
+- tFTelNoKurulus:TextField 
+- tFKurulusunAdresi:TextArea 
+- anchorInsan:AnchorPane 
+- btnIptal:Button 
+- textFieldYas:TextField  
+- textFieldMeslek:TextField 
+- textFieldEmail:TextField    
+- textFieldTelefon:TextField 
+- textFieldAdres:TextField  
+- textFieldİsimSoyİsim:TextField 
+- textFieldUyruk:TextField     
+- myImageView:ImageView 
+- fotografismi: String 
+
+--
+
+
++ onClik_image_save(ActionEvent event):void
++ addHuman():void 
++ addAnimal():void 
++ addCompany():void 
++ addFlower():void 
++ addTree():void 
++ addPharmacy():void 
++ addTaxi():void 
++ close():void 
++ isNumber(String tmp):boolean
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>3913</x>
+      <y>343</y>
+      <w>392</w>
+      <h>665</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;540.0;930.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>4718</x>
+      <y>1022</y>
+      <w>406</w>
+      <h>413</h>
+    </coordinates>
+    <panel_attributes>InsertController
+
+--
+
+- btnIptal:Button
+- textFieldYas:TextField
+- textFieldMeslek:TextField
+- textFieldEmail:TextField
+- textFieldTelefon:TextField  
+- textFieldAdres: TextField  
+- textFieldİsimSoyİsim:TextField  
+- textFieldUyruk:TextField
+- myImageView:ImageView 
+- lvEditHuman:JFXListView&lt;Insan&gt; 
+- fotografismi:String
+- eskiFotograf:String
+- textFieldHayvanYas:TextField
+- textFieldHayvanIsim:TextField
+- tfHayvanAdresBilgisi:TextField
+- tfHayvanTel:TextField  
+- lvEditAnimal:JFXListView&lt;Hayvan&gt; 
+- tFInsaTarihi:TextField
+- tFKurulusunIsmi:TextField
+- tFKurulusSektoru:TextField
+- tFTelNoKurulus :TextField
+- tFKurulusunAdresi:TextArea
+- lvEditCompany:JFXListView&lt;Kurulus&gt;
+- textFieldCicekYasi:TextField
+- textFieldCicekRenki:TextField
+- textFieldCicekIsmi:TextField
+- textFieldCicekBoyu:TextField
+- tfCiceckTuru:TextField   
+- tFCiceginAdresi:TextField 
+- lvEditFlower:JFXListView&lt;Cicek&gt;  
+- textFieldEczaneninAdi:TextField
+- tfEczaneTel:TextField
+- tfEcaneNobetGunu:TextField
+- tfEczaneAdres:TextField
+- lvEditPharmacy:JFXListView&lt;NobetciEczaneler&gt;   
+- textFieldAktifTaksiSayisi:TextField  
+- textFieldDurakAdi:TextField 
+- tFABTaksiDuragi:TextArea   
+- tFTelNoTaksiDuragi:TextField 
+- lvEditTaxi:JFXListView&lt;TaxiDuragi&gt;   
+- textfieldAgacinBoyu:TextField   
+- textfieldAgacAdi:TextField    
+- textfieldAgacinYas:TextField  
+- textfieldAgacinSaglikDurumu:TextField 
+-  tFagacinAdresi:TextArea
+-  lvEditTree:JFXListView&lt;Agac&gt;
+    
+--
++ void close()
+ + void setTextHuman()
++ void addHuman()
+
++ setTextAnimal():void 
++ addAnimal():void 
++ setTextCompany():void 
++ addCompany():void 
++ setTextFlower():void 
++ addFlower():void 
++ setTextPharmacy():
++ addPharmacy():void 
++ addTaxi(): void 
++ setTextTaxi():void 
++ setTextTree():void 
++ addTree():void 
++ fotografSil(String secilen_Fotograf):void 
++ onClik_image_save(ActionEvent event):void 
++ initialize(URL location, ResourceBundle resources):void 
++ isNumber(String tmp):boolean 
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>3969</x>
+      <y>343</y>
+      <w>973</w>
+      <h>693</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;1370.0;970.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>3458</x>
+      <y>987</y>
+      <w>462</w>
+      <h>784</h>
+    </coordinates>
+    <panel_attributes>PersonWindowController
+
+--
+- anchorHuman:AnchorPane
+- ivHuman:ImageView 
+- btnIptal:JFXButton 
+- btnGeri:Button 
+- lvHumanList:ListView&lt;Insan&gt; 
+- taHuman:TextArea 
+- anchorHayvanList:AnchorPane 
+- ivAnimal:ImageView 
+- lvAnimalList:ListView&lt;Hayvan&gt; 
+- taAnimal:TextArea 
+- ivFlower:ImageView 
+- lvFlowerList:ListView&lt;Cicek&gt; 
+- taFlower:TextArea 
+- ivCompany:ImageView 
+- lvCompanyList:ListView&lt;Kurulus&gt; 
+- taCompany:TextArea 
+- ivTaxi:ImageView 
+- lvTaxiList:ListView&lt;TaxiDuragi&gt; 
+- taTaxi:TextArea 
+- ivPharmacy:ImageView 
+- lvPharmacyList:ListView&lt;NobetciEczaneler&gt; 
+- taPharmacy:TextArea 
+- ivTree:ImageView 
+- lvTreeList:ListView&lt;Agac&gt; 
+- taTree:TextArea 
+- anchorPharmacyList:AnchorPane 
+- anchorFlowerList:AnchorPane 
+- anchorTaxiList:AnchorPane 
+- anchorTreeList:AnchorPane 
+- anchorInsan:AnchorPane 
+- taksiAnchor:AnchorPane 
+- tfBul:TextField 
+- taBul:JFXTextArea 
+
+--
++ PersonWindowController()
++ getInstance():PersonWindowController
++ initialize(URL url, ResourceBundle rb):void 
++ listViewSecilenInsan():void 
++ listViewSecilenHayvan():void 
++ listViewSecilenKurulus():void 
++ listViewSecilenAgac():void 
++ listViewSecilenCicek():void 
++ listViewSecilenEczane():void 
++ listViewSecilenTaxi():void 
++ updateHumanShow(ActionEvent event):void 
++ updateAnimalShow(ActionEvent event):void 
++ updateCompanyShow(ActionEvent event):void 
++ updateTaxiShow(ActionEvent event):void 
++ updateFlowerShow(ActionEvent event):void 
++ updatePharmacyShow(ActionEvent event):void 
++ updateTreeShow(ActionEvent event):void 
++ deleteHuman():void 
++ deleteTree():void 
++ deleteFlower():void 
++ deleteTaxi():void 
++ deletePharmacy():void
++ deleteAnimal():void 
++ deleteCompany():void 
++ close():void 
++ updateHumanList():void 
++ updateFlowerList():void 
++ updateTreeList():void
++ updateTaxiList():void 
++ updatePharmacyList():void 
++ updateAnimalList():void 
++ insan(ActionEvent event):void 
++ updateCompanyList():void 
++ kurulus(ActionEvent event):void 
++ hayvan(ActionEvent event):void 
++ agac(ActionEvent event):void 
++ cicek(ActionEvent event):void 
++ eczane(ActionEvent event):void 
++ kapat():void 
++ personFind():void 
++ isNumber(String tmp):boolean
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>2835</x>
+      <y>266</y>
+      <w>588</w>
+      <h>588</h>
+    </coordinates>
+    <panel_attributes>FileOperations
+--
+
+- fileNameInsan :String
+- fileNameHayvan :String
+- fileNameKurulus :String
+- fileNameCicek :String 
+- fileNameAgac : String 
+- fileNameEczane :String  
+- fileNameTaxi :String  
+- fileNameRecentCalls:String 
+- PersonList :ObservableList&lt;Insan&gt;
+- hayvanList: ObservableList&lt;Hayvan&gt;
+- kurulusList :ObservableList&lt;Kurulus&gt;
+- agacList :ObservableList&lt;Agac&gt;
+- cicekList : ObservableList&lt;Cicek&gt;
+- eczaneList :ObservableList&lt;NobetciEczaneler&gt;
+- taxiList : ObservableList&lt;TaxiDuragi&gt;
+
+--
+
++ FileOperations()
++ getInstance():FileOperations
++ writePersonFiles():void 
++ readPersonFiles():void 
++ personAdd(Insan eklenecekvarlik):void 
++ personDelete(Insan silinecekvarlik):void 
++ writeAnimalFiles():void 
++ readAnimalFiles():void 
++ animalAdd(Hayvan eklenecekvarlik):void 
++ animalDelete(Hayvan silinecekvarlik):void 
++ writeCompanyFiles():void 
++ readCompanyFiles():void 
++ companyAdd(Kurulus eklenecekvarlik):void 
++ companyDelete(Kurulus silinecekvarlik):void 
++ writePharmacyFiles():void 
++ readPharmacyFiles():void 
++ pharmacyAdd(NobetciEczaneler eklenecekVarlik):void 
++ pharmacyDelete(NobetciEczaneler silinecekvarlik):void 
++ writeTaxiFiles():void 
++ readTaxiFiles():void 
++ taxiAdd(TaxiDuragi eklenecekVarlik):void 
++ taxiDelete(TaxiDuragi silinecekvarlik):void 
++ writeTreeFiles():void 
++ readTreeFiles():void 
++ treeAdd(Agac eklenecekVarlik):void 
++ treeDelete(Agac silinecekvarlik):void 
++ writeFlowerFiles():void 
++ readFlowerFiles():void 
++ flowerAdd(Cicek eklenecekVarlik):void 
++ flowerDelete(Cicek silinecekvarlik):void 
++ getHayvanList():ObservableList&lt;Hayvan&gt; 
++ setHayvanList(ObservableList&lt;Hayvan&gt;:void 
++ getKurulusList():ObservableList&lt;Kurulus&gt;  
++ setKurulusList(ObservableList&lt;Kurulus&gt;:void 
++ getAgacList():ObservableList&lt;Agac&gt; 
++ setAgacList(ObservableList&lt;Agac&gt; :void 
++ getCicekList() :ObservableList&lt;Cicek&gt; 
++ setCicekList(ObservableList&lt;Cicek&gt; :void  
++ getEczaneList():ObservableList&lt;NobetciEczaneler&gt; 
++ setEczaneList(ObservableList&lt;NobetciEczaneler&gt;:void 
++ getTaxiList():ObservableList&lt;TaxiDuragi&gt; 
++ setTaxiList(ObservableList&lt;TaxiDuragi&gt;:void  
++ getPersonList():ObservableList&lt;Insan&gt; 
++ setPersonList(ObservableList&lt;Insan&gt;:void 
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>4774</x>
+      <y>301</y>
+      <w>147</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>FotoEkle 
+--
++ onClik_image_save(ActionEvent event):void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>4319</x>
+      <y>427</y>
+      <w>518</w>
+      <h>581</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>720.0;10.0;10.0;810.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>4837</x>
+      <y>427</y>
+      <w>133</w>
+      <h>609</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;170.0;850.0</additional_attributes>
+  </element>
+</diagram>

@@ -1,0 +1,85 @@
+
+#guncllebuttonu{
+    -fx-background-color: gray  ;
+	-fx-padding: 8 8 8 8;
+	-fx-background-radius:10; 
+}
+#silbuttonu{
+    -fx-background-color: red  ;
+	-fx-padding: 8 8 8 8;
+	-fx-background-radius:10; 
+}
+#Eklebuttonu{
+    	 -fx-background-color:blue   ;
+	-fx-padding: 8 8 8 8;
+	-fx-background-radius:10;
+
+}
+#anchor{
+    -fx-background-color: #00cccc; 
+}
+#lvEklencekVarlik{
+    -fx-padding: 8 8 8 8;
+	-fx-background-radius:10;
+}
+#lvEklencekVarlik1{
+     -fx-padding: 8 8 8 8;
+	-fx-background-radius:10;
+}
+#taKisiBilgileri{
+    -fx-padding: 8 8 8 8;
+	-fx-background-radius:10;
+}
+#cikisbuttonu{
+    -fx-background-color:lightsalmon   ;
+	-fx-padding: 8 8 8 8;
+	-fx-background-radius:10;
+}
+#bagisyapbuttonu{
+    -fx-background-color:aquamarine   ;
+	-fx-padding: 8 8 8 8;
+	-fx-background-radius:10;
+}
+
+#silbuttonu{
+	-fx-background-color: red ;
+	-fx-padding: 8 8 8 8;
+	-fx-background-radius:10;	
+}
+#iptalbuttonu{
+	-fx-background-color: rgb(192,192,192) ;
+	-fx-padding: 8 8 8 8;
+	-fx-background-radius:10;	
+}
+#iptalbuttonu{
+	-fx-background-color: rgb(192,192,192) ;
+	-fx-padding: 8 8 8 8;
+	-fx-background-radius:10;
+}
+
+#arabuttonu{
+	-fx-background-color: blue ;
+	-fx-padding: 8 8 8 8;
+	-fx-background-radius:10;	
+}
+
+
+
+#geridon{
+	-fx-background-color: white ;
+	-fx-padding: 8 8 8 8;
+	-fx-background-radius:10;	
+	
+}
+
+#Ekle2{
+	-fx-background-color: blue ;
+	-fx-padding: 8 8 8 8;
+	-fx-background-radius:10;	
+	
+}
+#panel{
+    -fx-background-color: blue ;
+	-fx-padding: 8 8 8 8;
+	-fx-background-radius:10;
+}

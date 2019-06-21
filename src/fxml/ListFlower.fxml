@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorFlowerList" prefHeight="475.0" prefWidth="613.0" style="-fx-background-color: #cddc39;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rehber.controller.PersonWindowController">
+   <children>
+      <JFXButton fx:id="btnSilCIcekListesi" layoutX="512.0" layoutY="128.0" onAction="#deleteFlower" prefHeight="47.0" prefWidth="93.0" style="-fx-background-color: red;" text="SİL" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font></JFXButton>
+      <Label layoutX="219.0" layoutY="14.0" prefHeight="47.0" prefWidth="207.0" text="ÇIÇEK LISTESI">
+         <font>
+            <Font name="Gill Sans Ultra Bold" size="21.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnIptal" layoutX="512.0" layoutY="363.0" onAction="#close" prefHeight="47.0" prefWidth="93.0" style="-fx-background-color: red;" text="GERİ" textFill="WHITE" />
+      <Label layoutX="3.0" prefHeight="64.0" prefWidth="219.0" text=".............................">
+         <font>
+            <Font name="System Bold" size="43.0" />
+         </font>
+      </Label>
+      <Label layoutX="402.0" prefHeight="64.0" prefWidth="219.0" text=".............................">
+         <font>
+            <Font name="System Bold" size="43.0" />
+         </font>
+      </Label>
+      <Label layoutX="3.0" layoutY="410.0" prefHeight="64.0" prefWidth="219.0" text=".............................">
+         <font>
+            <Font name="System Bold" size="43.0" />
+         </font>
+      </Label>
+      <Label layoutX="214.0" layoutY="410.0" prefHeight="64.0" prefWidth="219.0" text=".............................">
+         <font>
+            <Font name="System Bold" size="43.0" />
+         </font>
+      </Label>
+      <Label layoutX="427.0" layoutY="410.0" prefHeight="64.0" prefWidth="190.0" text="......................">
+         <font>
+            <Font name="System Bold" size="43.0" />
+         </font>
+      </Label>
+      <Label layoutX="308.0" layoutY="-41.0" text=".">
+         <font>
+            <Font size="56.0" />
+         </font>
+      </Label>
+      <Label layoutX="231.0" layoutY="-41.0" text=".">
+         <font>
+            <Font size="56.0" />
+         </font>
+      </Label>
+      <Label layoutX="387.0" layoutY="-41.0" prefHeight="83.0" prefWidth="31.0" text=".">
+         <font>
+            <Font size="56.0" />
+         </font>
+      </Label>
+      <ListView fx:id="lvFlowerList" layoutX="22.0" layoutY="64.0" onMouseClicked="#listViewSecilenCicek" prefHeight="368.0" prefWidth="131.0" />
+      <TextArea fx:id="taFlower" layoutX="168.0" layoutY="64.0" prefHeight="368.0" prefWidth="293.0" />
+      <JFXButton fx:id="btnGuncelleCIcekListesi" layoutX="512.0" layoutY="191.0" onAction="#updateFlowerShow" prefHeight="47.0" prefWidth="93.0" style="-fx-background-color: #9e9d24;" text="GÜNCELLE" />
+      <JFXButton fx:id="btnAraCIcekListesi" layoutX="512.0" layoutY="64.0" onAction="#cicek" prefHeight="47.0" prefWidth="93.0" style="-fx-background-color: #9e9d24;" text="EKLE" />
+      <ImageView fx:id="ivFlower" fitHeight="97.0" fitWidth="93.0" layoutX="512.0" layoutY="248.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

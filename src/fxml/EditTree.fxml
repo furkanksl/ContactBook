@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="agacanchor" minHeight="300.0" minWidth="300.0" prefHeight="639.0" prefWidth="1000.0" style="-fx-background-color: #c0ca33;" stylesheets="@../Main/Css.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rehber.controller.EditController">
+   <children>
+      <Button fx:id="btnKayitetAgac" layoutX="441.0" layoutY="581.0" mnemonicParsing="false" onAction="#addTree" prefHeight="44.0" prefWidth="96.0" style="-fx-background-color: blue;" stylesheets="@../stylesheet/Css.css" text="Kaydet" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnIptal" layoutX="569.0" layoutY="579.0" mnemonicParsing="false" onAction="#close" prefHeight="44.0" prefWidth="90.0" style="-fx-background-color: red;" text="iptal" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Label layoutX="30.0" layoutY="23.0" prefHeight="55.0" prefWidth="510.0" text="Aşagdaki bilgiler Doldurunuz :" textFill="#221d1d">
+         <font>
+            <Font name="Papyrus" size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="109.0" prefHeight="61.0" prefWidth="168.0" text="Ağacın Adı :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="262.0" prefHeight="61.0" prefWidth="168.0" text="Ağacın Boyu :">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textfieldAgacinBoyu" layoutX="246.0" layoutY="280.0" prefHeight="31.0" prefWidth="232.0" promptText="örneğin :  185" />
+      <Label layoutX="6.0" layoutY="518.0" prefHeight="61.0" prefWidth="261.0" text="Ağacın Verimlilik Durumu :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textfieldAgacAdi" layoutX="246.0" layoutY="124.0" prefHeight="31.0" prefWidth="232.0" promptText="örneğin : zeytin">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <Button fx:id="btnfotografEkleAgac" layoutX="569.0" layoutY="94.0" mnemonicParsing="false" onAction="#onClik_image_save" prefHeight="48.0" prefWidth="208.0" style="-fx-background-color: #ff9800;" text="Fotoğraf Ekle">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Button>
+      <RadioButton layoutX="-142.0" layoutY="101.0" mnemonicParsing="false" text="RadioButton" />
+      <Label layoutX="20.0" layoutY="188.0" prefHeight="61.0" prefWidth="232.0" text="Ağacın Yaşı :">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textfieldAgacinYas" layoutX="246.0" layoutY="206.0" prefHeight="31.0" prefWidth="232.0" promptText="örneğin :  2">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <Label layoutX="14.0" layoutY="336.0" prefHeight="61.0" prefWidth="232.0" text="Agacın Sağlık Durumu :">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textfieldAgacinSaglikDurumu" layoutX="246.0" layoutY="351.0" prefHeight="31.0" prefWidth="232.0" promptText="örneğin :  iyi">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <Label layoutX="14.0" layoutY="415.0" prefHeight="61.0" prefWidth="168.0" text="Ağacın Adresi:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="tFagacinAdresi" layoutX="246.0" layoutY="421.0" prefHeight="97.0" prefWidth="232.0" promptText="örneğin :  çırıkpınar Mah./Battalgazi/Malatya" />
+      <ImageView fx:id="myImageView" fitHeight="173.0" fitWidth="208.0" layoutX="569.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true" />
+      <JFXListView fx:id="lvEditTree" layoutX="788.0" layoutY="93.0" onMouseClicked="#setTextTree" prefHeight="441.0" prefWidth="200.0" />
+      <TextField fx:id="tfAgacVeimlilik" layoutX="246.0" layoutY="530.0" prefHeight="37.0" prefWidth="232.0" promptText="örneğin : verimli">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorTercihler" minHeight="300.0" minWidth="300.0" prefHeight="536.0" prefWidth="630.0" style="-fx-background-color: #c0ca33;" stylesheets="@../Main/Css.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rehber.controller.InsertController">
+   <children>
+      <Button fx:id="btnIptal" layoutX="525.0" layoutY="474.0" mnemonicParsing="false" onAction="#close" prefHeight="44.0" prefWidth="90.0" style="-fx-background-color: red;" text="iptal" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Label fx:id="baslik" layoutX="60.0" layoutY="14.0" prefHeight="55.0" prefWidth="519.0" text="Eklenecek Kişinin Türünü Seçiniz">
+         <font>
+            <Font name="NSimSun" size="32.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnAgac" layoutX="75.0" layoutY="207.0" mnemonicParsing="false" onAction="#agac" prefHeight="77.0" prefWidth="235.0" style="-fx-background-color: #9e9d24;" text="Agaç  ">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></Button>
+      <Button fx:id="btnInsan" layoutX="75.0" layoutY="121.0" mnemonicParsing="false" onAction="#insan1" prefHeight="77.0" prefWidth="235.0" style="-fx-background-color: #9e9d24;" text="    İnsan     ">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></Button>
+      <Button fx:id="btnKurulus" layoutX="319.0" layoutY="207.0" mnemonicParsing="false" onAction="#kurulus" prefHeight="77.0" prefWidth="235.0" style="-fx-background-color: #9e9d24;" text="Kuruluş  ">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></Button>
+         <Button fx:id="btnHayvan" layoutX="316.0" layoutY="121.0" mnemonicParsing="false" onAction="#hayvan" prefHeight="77.0" prefWidth="235.0" style="-fx-background-color: #9e9d24;" text=" Hayvan ">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></Button>
+      <Button fx:id="btnCicek" layoutX="75.0" layoutY="293.0" mnemonicParsing="false" onAction="#cicek" prefHeight="77.0" prefWidth="235.0" style="-fx-background-color: #9e9d24;" text="Çiçek   ">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></Button>
+      <FontAwesomeIconView layoutX="-179.0" layoutY="-9.0" />
+      <Button fx:id="btnEczane" layoutX="319.0" layoutY="293.0" mnemonicParsing="false" onAction="#Eczane" prefHeight="77.0" prefWidth="235.0" style="-fx-background-color: #9e9d24;" text="Eczane">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnTaxiDuragi" layoutX="198.0" layoutY="383.0" mnemonicParsing="false" onAction="#TaxiDuragi" prefHeight="77.0" prefWidth="235.0" style="-fx-background-color: #9e9d24;" text="Taxi Duragi">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

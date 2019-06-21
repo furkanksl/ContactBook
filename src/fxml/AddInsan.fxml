@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorInsan" minHeight="300.0" minWidth="300.0" prefHeight="644.0" prefWidth="763.0" style="-fx-background-color: #c0ca33;" stylesheets="@../Main/Css.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rehber.controller.NewController">
+   <children>
+      <Button fx:id="btnKayitetInsan" layoutX="538.0" layoutY="585.0" mnemonicParsing="false" onAction="#addHuman" prefHeight="44.0" prefWidth="96.0" style="-fx-background-color: blue;" stylesheets="@../stylesheet/Css.css" text="Kayit et" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnIptal" layoutX="659.0" layoutY="581.0" mnemonicParsing="false" onAction="#close" prefHeight="44.0" prefWidth="90.0" style="-fx-background-color: red;" text="iptal" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Label layoutX="87.0" layoutY="14.0" prefHeight="55.0" prefWidth="510.0" text="...Aşagdaki bilgiler Doldurunuz ..." textAlignment="JUSTIFY" textFill="#221d1d">
+         <font>
+            <Font name="Papyrus" size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="94.0" prefHeight="61.0" prefWidth="133.0" text="isim_soyisim:">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textFieldYas" layoutX="226.0" layoutY="161.0" prefHeight="31.0" prefWidth="232.0" promptText="örneğin :  22">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <Label layoutX="86.0" layoutY="202.0" prefHeight="61.0" prefWidth="114.0" text="  uyruk : ">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textFieldMeslek" layoutX="226.0" layoutY="263.0" prefHeight="31.0" prefWidth="232.0" promptText="örneğin :  Boksör">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <TextField fx:id="textFieldEmail" layoutX="226.0" layoutY="318.0" prefHeight="31.0" prefWidth="232.0" promptText="örneğin :adelalhajji97@gmail.com">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <TextField fx:id="textFieldTelefon" layoutX="226.0" layoutY="364.0" prefHeight="31.0" prefWidth="232.0" promptText="örneğin :  05383838048">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <TextField fx:id="textFieldAdres" layoutX="226.0" layoutY="410.0" prefHeight="171.0" prefWidth="232.0" promptText="örneğin :  Battalgazi/Malatya">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <Label layoutX="113.0" layoutY="146.0" prefHeight="61.0" prefWidth="104.0" text="  yas :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="86.0" layoutY="248.0" prefHeight="61.0" prefWidth="114.0" text=" Meslek :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="95.0" layoutY="409.0" prefHeight="31.0" prefWidth="90.0" text=" Adres :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="95.0" layoutY="305.0" prefHeight="61.0" prefWidth="114.0" text=" e-mail :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textFieldİsimSoyİsim" layoutX="226.0" layoutY="109.0" prefHeight="31.0" prefWidth="232.0" promptText="örneğin :  Muhammad Ali">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <Button fx:id="btnLoadHumanPhoto" layoutX="525.0" layoutY="107.0" mnemonicParsing="false" onAction="#onClik_image_save" prefHeight="48.0" prefWidth="218.0" style="-fx-background-color: #ff9800;" text="Fotoğraf Ekle">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Button>
+      <TextField fx:id="textFieldUyruk" layoutX="226.0" layoutY="217.0" prefHeight="31.0" prefWidth="232.0" promptText="örneğin :  Türkiye">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <Label layoutX="86.0" layoutY="349.0" prefHeight="61.0" prefWidth="114.0" text="Telefon :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="myImageView" fitHeight="150.0" fitWidth="218.0" layoutX="525.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

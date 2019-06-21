@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="anchor" prefHeight="632.0" prefWidth="849.0" style="-fx-background-color: #c5e1a5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rehber.home.HomeWindowController">
+ <children>
+      <Button fx:id="cikisbuttonu" defaultButton="true" layoutX="394.0" layoutY="589.0" mnemonicParsing="false" onAction="#close" prefHeight="33.0" prefWidth="84.0" style="-fx-background-color: #c62828;" text="ÇIKIŞ" textFill="WHITE">
+         <font>
+            <Font name="Gill Sans Ultra Bold Condensed" size="16.0" />
+         </font>
+      </Button>
+      <Text fill="#800606" fontSmoothingType="LCD" layoutX="344.0" layoutY="154.0" stroke="#c99b40" strokeType="OUTSIDE" strokeWidth="2.0" text="Kişiler" textAlignment="CENTER" underline="true" wrappingWidth="161.0000018030405">
+         <font>
+            <Font name="Bauhaus 93" size="48.0" />
+         </font>
+      </Text>
+      <Button fx:id="bagisyapbuttonu" defaultButton="true" layoutX="356.0" layoutY="534.0" mnemonicParsing="false" onAction="#bagis" prefHeight="45.0" prefWidth="161.0" text="Donate">
+         <font>
+            <Font name="Gill Sans Ultra Bold Condensed" size="22.0" />
+         </font>
+      </Button>
+      <Text fill="#3533aa" layoutX="360.0" layoutY="513.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Daha iyi bir uygulama için" wrappingWidth="152.999990940094">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Label layoutX="182.0" layoutY="14.0" prefHeight="58.0" prefWidth="515.0" text="Resimli Telefon ve Adres Rehberi" textFill="#1b1a1a">
+         <font>
+            <Font name="Curlz MT" size="38.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnInsanList" layoutX="21.0" layoutY="186.0" mnemonicParsing="false" onAction="#ListOfHuman" prefHeight="45.0" prefWidth="264.0" style="-fx-background-color: #9e9d24;" text="İNSAN">
+         <font>
+            <Font name="Bodoni MT Bold" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCicekList" layoutX="293.0" layoutY="320.0" mnemonicParsing="false" onAction="#ListOfFlower" prefHeight="45.0" prefWidth="264.0" style="-fx-background-color: #9e9d24;" text="ÇİÇEK">
+         <font>
+            <Font name="Bodoni MT Bold" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAgacList" layoutX="293.0" layoutY="186.0" mnemonicParsing="false" onAction="#ListOfTree" prefHeight="45.0" prefWidth="264.0" style="-fx-background-color: #9e9d24;" text="AĞAÇ">
+         <font>
+            <Font name="Bodoni MT Bold" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnTaxiList" layoutX="565.0" layoutY="256.0" mnemonicParsing="false" onAction="#ListOfTaxi" prefHeight="45.0" prefWidth="264.0" style="-fx-background-color: #9e9d24;" text="TAXİ">
+         <font>
+            <Font name="Bodoni MT Bold" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEczaneList" layoutX="293.0" layoutY="256.0" mnemonicParsing="false" onAction="#ListOfPharmacy" prefHeight="45.0" prefWidth="264.0" style="-fx-background-color: #9e9d24;" text="ECZANE">
+         <font>
+            <Font name="Bodoni MT Bold" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnKurulusList" layoutX="21.0" layoutY="256.0" mnemonicParsing="false" onAction="#ListOfCompany" prefHeight="45.0" prefWidth="264.0" style="-fx-background-color: #9e9d24;" text="KURULUŞ">
+         <font>
+            <Font name="Bodoni MT Bold" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnHayvanList" layoutX="565.0" layoutY="186.0" mnemonicParsing="false" onAction="#ListOfAnimal" prefHeight="45.0" prefWidth="264.0" style="-fx-background-color: #9e9d24;" text="HAYVAN">
+         <font>
+            <Font name="Bodoni MT Bold" size="25.0" />
+         </font>
+      </Button>
+      <Label layoutX="8.0" layoutY="11.0" prefHeight="64.0" prefWidth="175.0" text=".............................">
+         <font>
+            <Font name="System Bold" size="43.0" />
+         </font>
+      </Label>
+      <Label layoutX="674.0" layoutY="11.0" prefHeight="64.0" prefWidth="175.0" text=".............................">
+         <font>
+            <Font name="System Bold" size="43.0" />
+         </font>
+      </Label>
+      <Label layoutX="4.0" layoutY="570.0" prefHeight="64.0" prefWidth="186.0" text=".............................">
+         <font>
+            <Font name="System Bold" size="43.0" />
+         </font>
+      </Label>
+      <Label layoutX="178.0" layoutY="570.0" prefHeight="64.0" prefWidth="218.0" text=".............................">
+         <font>
+            <Font name="System Bold" size="43.0" />
+         </font>
+      </Label>
+      <Label layoutX="484.0" layoutY="570.0" prefHeight="64.0" prefWidth="186.0" text=".............................">
+         <font>
+            <Font name="System Bold" size="43.0" />
+         </font>
+      </Label>
+      <Label layoutX="660.0" layoutY="570.0" prefHeight="64.0" prefWidth="186.0" text=".............................">
+         <font>
+            <Font name="System Bold" size="43.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnAra" layoutX="344.0" layoutY="438.0" onAction="#SearchPerson" prefHeight="54.0" prefWidth="186.0" style="-fx-background-color: blue;" text="Listeden Kişi Bul" textFill="WHITE" />
+   </children>
+   <stylesheets>
+      <URL value="@main.css" />
+      <URL value="@Css.css" />
+   </stylesheets>
+
+</AnchorPane>

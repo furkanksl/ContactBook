@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="eczaneAnchor" minHeight="300.0" minWidth="300.0" prefHeight="619.0" prefWidth="802.0" style="-fx-background-color: #c0ca33;" stylesheets="@../Main/Css.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rehber.controller.NewController">
+   <children>
+      <Button fx:id="btnKayitetEczane" layoutX="572.0" layoutY="558.0" mnemonicParsing="false" onAction="#addPharmacy" prefHeight="44.0" prefWidth="96.0" style="-fx-background-color: blue;" stylesheets="@../stylesheet/Css.css" text="Kaydet" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnIptal" layoutX="698.0" layoutY="556.0" mnemonicParsing="false" onAction="#close" prefHeight="44.0" prefWidth="90.0" style="-fx-background-color: red;" text="iptal" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Label layoutX="30.0" layoutY="23.0" prefHeight="55.0" prefWidth="510.0" text="Aşagdaki bilgiler Doldurunuz :" textFill="#221d1d">
+         <font>
+            <Font name="Papyrus" size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="109.0" prefHeight="61.0" prefWidth="168.0" text="Eczacının İsmi :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="391.0" prefHeight="61.0" prefWidth="168.0" text="Adres Bilgileri :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textFieldEczaneninAdi" layoutX="246.0" layoutY="124.0" prefHeight="31.0" prefWidth="232.0" promptText="örneğin :  şifa eczanesi">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <Button fx:id="btnFotografEkleEczane" layoutX="572.0" layoutY="112.0" mnemonicParsing="false" onAction="#onClik_image_save" prefHeight="48.0" prefWidth="218.0" style="-fx-background-color: #ff9800;" text="Fotoğraf Ekle">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Button>
+      <RadioButton layoutX="-142.0" layoutY="101.0" mnemonicParsing="false" text="RadioButton" />
+      <Label layoutX="23.0" layoutY="299.0" prefHeight="69.0" prefWidth="208.0" text="Tel No :">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfEczaneTel" layoutX="247.0" layoutY="318.0" prefHeight="31.0" prefWidth="232.0" promptText="örneğin :  05383838048">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <Label layoutX="23.0" layoutY="204.0" prefHeight="61.0" prefWidth="168.0" text="Nöbet Günü :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfEcaneNobetGunu" layoutX="247.0" layoutY="219.0" prefHeight="31.0" prefWidth="232.0" promptText="örneğin : pazar-salı">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <TextField fx:id="tfEczaneAdres" layoutX="247.0" layoutY="422.0" prefHeight="138.0" prefWidth="232.0" promptText="örneğin :  Battalgazi/Malatya">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <ImageView fx:id="myImageView" fitHeight="150.0" fitWidth="218.0" layoutX="572.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

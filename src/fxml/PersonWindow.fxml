@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="475.0" prefWidth="613.0" style="-fx-background-color: #ffe082;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="com.rehber.controller.PersonWindowController">
+   <children>
+      <JFXButton fx:id="btnKurulusListe" layoutX="333.0" layoutY="139.0" prefHeight="47.0" prefWidth="93.0" style="-fx-background-color: #9e9d24;" text="KURULUS" />
+      <JFXButton fx:id="btnInsanListe" layoutX="256.0" layoutY="86.0" prefHeight="47.0" prefWidth="93.0" style="-fx-background-color: #9e9d24;" text="İNSAN " textFill="#0d0d0d" />
+      <JFXButton fx:id="btnCicekListe" layoutX="427.0" layoutY="249.0" prefHeight="47.0" prefWidth="93.0" style="-fx-background-color: #9e9d24;" text="ÇİÇEK" />
+      <JFXButton fx:id="btnHayvanListe" layoutX="187.0" layoutY="139.0" prefHeight="47.0" prefWidth="93.0" style="-fx-background-color: #9e9d24;" text="HAYVAN" />
+      <JFXButton fx:id="btnEczaneListe" layoutX="141.0" layoutY="193.0" prefHeight="47.0" prefWidth="93.0" style="-fx-background-color: #9e9d24;" text="N. ECZANE" />
+      <JFXButton fx:id="btnAgacListe" layoutX="95.0" layoutY="249.0" prefHeight="47.0" prefWidth="93.0" style="-fx-background-color: #9e9d24;" text="AĞAÇ" />
+      <Label layoutX="219.0" layoutY="14.0" prefHeight="47.0" prefWidth="208.0" text="Kişi Listeleri">
+         <font>
+            <Font name="Gill Sans Ultra Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="208.0" layoutY="328.0" prefHeight="21.0" prefWidth="200.0" text="Lütfen bir kategori seçiniz !!!">
+         <font>
+            <Font name="Franklin Gothic Demi Cond" size="18.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnIptal" layoutX="261.0" layoutY="395.0" onAction="#close" prefHeight="47.0" prefWidth="93.0" style="-fx-background-color: red;" text="GERİ" textFill="WHITE" />
+      <Label layoutX="3.0" prefHeight="64.0" prefWidth="219.0" text=".............................">
+         <font>
+            <Font name="System Bold" size="43.0" />
+         </font>
+      </Label>
+      <Label layoutX="402.0" prefHeight="64.0" prefWidth="219.0" text=".............................">
+         <font>
+            <Font name="System Bold" size="43.0" />
+         </font>
+      </Label>
+      <Label layoutX="3.0" layoutY="410.0" prefHeight="64.0" prefWidth="219.0" text=".............................">
+         <font>
+            <Font name="System Bold" size="43.0" />
+         </font>
+      </Label>
+      <Label layoutX="214.0" layoutY="410.0" prefHeight="64.0" prefWidth="219.0" text=".............................">
+         <font>
+            <Font name="System Bold" size="43.0" />
+         </font>
+      </Label>
+      <Label layoutX="426.0" layoutY="410.0" prefHeight="64.0" prefWidth="190.0" text="......................">
+         <font>
+            <Font name="System Bold" size="43.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnTaxiListe" layoutX="408.0" layoutY="199.0" prefHeight="47.0" prefWidth="93.0" style="-fx-background-color: #9e9d24;" text="TAXI" />
+   </children>
+</AnchorPane>
